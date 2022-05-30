@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1626535}
   - component: {fileID: 1626534}
+  - component: {fileID: 1626536}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -197,7 +198,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.51e-43, y: 5.542053, z: 7.52e-43, w: -2.0994473}
+  m_BoundingSphereOverride: {x: 7.57e-43, y: 2.51e-43, z: 0, w: -1.0163446e+10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -212,10 +213,31 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1626536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &27667372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100066, guid: ea0a93fd66233784e81bc6c4151a1304, type: 3}
@@ -254,7 +276,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.738061, z: 0.0605762}
 --- !u!95 &27667376
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -267,6 +289,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -493,6 +516,7 @@ Transform:
   m_LocalRotation: {x: 0.21338339, y: -0.46009725, z: 0.11494179, w: -0.85414666}
   m_LocalPosition: {x: 2.6029644, y: -0.24578333, z: 21.760056}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1083442893}
   m_RootOrder: 0
@@ -797,18 +821,18 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 8.459856, y: 5, z: 5.725721}
-  m_BoxOffset: {x: 0.770072, y: 2.5, z: 2.1371396}
+  m_BoxSize: {x: 9.525582, y: 5.6463985, z: 7.460623}
+  m_BoxOffset: {x: -0.9403949, y: -2.8231993, z: -0.0114398}
   m_NearClip: 0.3
   m_FarClip: 1000
   m_ShadowDistance: 100
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9056604, g: 0.8917283, b: 0.08116765, a: 0}
+  m_BackGroundColor: {r: 0.90588236, g: 0.7145078, b: 0.082352914, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 1.05
-  m_BlendDistance: 1
+  m_IntensityMultiplier: 1.34
+  m_BlendDistance: 3.68
   m_HDR: 1
   m_BoxProjection: 0
   m_RenderDynamicObjects: 0
@@ -823,8 +847,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408741907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.14, y: 0.96, z: 6.15}
+  m_LocalPosition: {x: -4.29308, y: 5.96, z: 6.651128}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -964,6 +989,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.926879, y: 5.692011, z: 12.941909}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1043281795}
   - {fileID: 1258430376}
@@ -1420,6 +1446,7 @@ Transform:
   m_LocalRotation: {x: 0.28293863, y: -1e-45, z: 0, w: 0.95913804}
   m_LocalPosition: {x: 0, y: 4.53, z: -7.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1484,14 +1511,14 @@ LightProbeGroup:
   m_GameObject: {fileID: 765623033}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 2.9847374, y: -6.1155396, z: 7.943656}
+  - {x: 2.9847374, y: -6.1155396, z: 10.997062}
   - {x: 1.223834, y: 1, z: -1}
   - {x: -6.484351, y: -6.8790374, z: 6.305567}
-  - {x: 1, y: -5.5003448, z: -2.3890958}
+  - {x: 1, y: -5.5003448, z: -6.2539964}
   - {x: -1, y: -0.9850173, z: 2.3608713}
   - {x: -1, y: 1, z: -1}
   - {x: -3.0221567, y: -6.0692816, z: 8.571122}
-  - {x: -3.6932116, y: -6.2412806, z: -1}
+  - {x: -3.6932116, y: -6.2412806, z: -2.5143151}
   m_Dering: 1
 --- !u!4 &765623035
 Transform:
@@ -1501,8 +1528,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765623033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.56, y: 7.37, z: 9.09}
+  m_LocalPosition: {x: -18.33, y: 7.37, z: 9.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1774,6 +1802,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.42, y: 9.28, z: 9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1896,6 +1925,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1944,6 +1974,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -2001,7 +2032,10 @@ MonoBehaviour:
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
+    ModeOverride: 0
     LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 4.144809, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2020,6 +2054,7 @@ Transform:
   m_LocalRotation: {x: 0.28293863, y: -1e-45, z: -0, w: 0.95913804}
   m_LocalPosition: {x: 0, y: 4.53, z: -7.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 251132896}
   m_Father: {fileID: 0}
@@ -2110,6 +2145,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: eb4fdd308d7e5e6409868e9329ecf8b0, type: 3}
   m_PrefabInstance: {fileID: 1317306971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1211316922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211316924}
+  - component: {fileID: 1211316923}
+  m_Layer: 0
+  m_Name: Reflection Probe (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1211316923
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211316922}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 8.270933, z: 10}
+  m_BoxOffset: {x: 0, y: 0.8645333, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.6603774, g: 0.6496158, b: 0.20870416, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1.38
+  m_BlendDistance: 1.24
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1211316924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211316922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.29, y: 4.68, z: 6.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1234775343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,18 +2242,18 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 5, y: 6.3537765, z: 6.368105}
-  m_BoxOffset: {x: 2.5, y: -0.26632333, z: -1.8159475}
+  m_BoxSize: {x: 13.736137, y: 6.4519114, z: 9.276874}
+  m_BoxOffset: {x: -0.8466768, y: -1.2450631, z: -1.9274912}
   m_NearClip: 0.3
   m_FarClip: 1000
   m_ShadowDistance: 100
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.90588236, g: 0.8399496, b: 0.09803922, a: 0}
+  m_BackGroundColor: {r: 0.90588236, g: 0.6618851, b: 0.09803922, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  m_IntensityMultiplier: 1.19
-  m_BlendDistance: 1
+    m_Bits: 2147483647
+  m_IntensityMultiplier: 1.65
+  m_BlendDistance: 5.3
   m_HDR: 1
   m_BoxProjection: 0
   m_RenderDynamicObjects: 0
@@ -2168,8 +2268,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234775343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.16, y: 4.66, z: 15.082382}
+  m_LocalPosition: {x: -13.607463, y: 4.61358, z: 15.099053}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -2785,6 +2886,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.35, y: 9.28, z: 16.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -3198,6 +3300,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.35, y: 9.28, z: 7.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
